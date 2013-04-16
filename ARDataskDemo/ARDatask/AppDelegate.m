@@ -12,11 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(YOUR_METHOD) name:@"dataskDidOptToRequest" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dataskDidOptToRequest:) name:@"dataskDidOptToRequest" object:nil];
     [ARDatask appLaunched:YES];
     [ARDatask setDebug:YES];
     return YES;
@@ -24,7 +20,7 @@
 
 - (void)dataskDidOptToRequest:(NSNotification *)notification
 {
-    [ARDatask setRequestCompleted:YES];
+    [self.window.rootViewController performSegueWithIdentifier:@"UserDataViewController" sender:self];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
