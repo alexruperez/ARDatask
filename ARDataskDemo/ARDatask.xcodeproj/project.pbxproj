@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D569C601171DD1BB00255D8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D569C600171DD1BB00255D8B /* UIKit.framework */; };
+		D569C603171DD1BB00255D8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D569C602171DD1BB00255D8B /* Foundation.framework */; };
+		D569C605171DD1BB00255D8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D569C604171DD1BB00255D8B /* CoreGraphics.framework */; };
+		D569C60B171DD1BB00255D8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D569C609171DD1BB00255D8B /* InfoPlist.strings */; };
+		D569C60D171DD1BB00255D8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D569C60C171DD1BB00255D8B /* main.m */; };
+		D569C611171DD1BB00255D8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D569C610171DD1BB00255D8B /* AppDelegate.m */; };
+		D569C613171DD1BB00255D8B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D569C612171DD1BB00255D8B /* Default.png */; };
+		D569C615171DD1BB00255D8B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D569C614171DD1BB00255D8B /* Default@2x.png */; };
+		D569C617171DD1BB00255D8B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D569C616171DD1BB00255D8B /* Default-568h@2x.png */; };
+		D590845F171DD23F007DF9B0 /* ARDatask.m in Sources */ = {isa = PBXBuildFile; fileRef = D590845E171DD23F007DF9B0 /* ARDatask.m */; };
+		D5908461171DD265007DF9B0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5908460171DD265007DF9B0 /* CFNetwork.framework */; };
+		D5908463171DD26D007DF9B0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5908462171DD26D007DF9B0 /* SystemConfiguration.framework */; };
+		D5908465171DD274007DF9B0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5908464171DD274007DF9B0 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D5908467171DD2FF007DF9B0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D5908466171DD2FF007DF9B0 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D569C5FD171DD1BB00255D8B /* ARDatask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDatask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D569C600171DD1BB00255D8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D569C602171DD1BB00255D8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D569C604171DD1BB00255D8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D569C608171DD1BB00255D8B /* ARDatask-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARDatask-Info.plist"; sourceTree = "<group>"; };
+		D569C60A171DD1BB00255D8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D569C60C171DD1BB00255D8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D569C60E171DD1BB00255D8B /* ARDatask-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARDatask-Prefix.pch"; sourceTree = "<group>"; };
+		D569C60F171DD1BB00255D8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D569C610171DD1BB00255D8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D569C612171DD1BB00255D8B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D569C614171DD1BB00255D8B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D569C616171DD1BB00255D8B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D590845D171DD23F007DF9B0 /* ARDatask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDatask.h; path = ../../ARDatask.h; sourceTree = "<group>"; };
+		D590845E171DD23F007DF9B0 /* ARDatask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARDatask.m; path = ../../ARDatask.m; sourceTree = "<group>"; };
+		D5908460171DD265007DF9B0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D5908462171DD26D007DF9B0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D5908464171DD274007DF9B0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D5908466171DD2FF007DF9B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D569C5FA171DD1BB00255D8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5908465171DD274007DF9B0 /* StoreKit.framework in Frameworks */,
+				D5908463171DD26D007DF9B0 /* SystemConfiguration.framework in Frameworks */,
+				D5908461171DD265007DF9B0 /* CFNetwork.framework in Frameworks */,
+				D569C601171DD1BB00255D8B /* UIKit.framework in Frameworks */,
+				D569C603171DD1BB00255D8B /* Foundation.framework in Frameworks */,
+				D569C605171DD1BB00255D8B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D569C5F4171DD1BB00255D8B = {
+			isa = PBXGroup;
+			children = (
+				D569C606171DD1BB00255D8B /* ARDatask */,
+				D569C5FF171DD1BB00255D8B /* Frameworks */,
+				D569C5FE171DD1BB00255D8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D569C5FE171DD1BB00255D8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D569C5FD171DD1BB00255D8B /* ARDatask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D569C5FF171DD1BB00255D8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5908464171DD274007DF9B0 /* StoreKit.framework */,
+				D5908462171DD26D007DF9B0 /* SystemConfiguration.framework */,
+				D5908460171DD265007DF9B0 /* CFNetwork.framework */,
+				D569C600171DD1BB00255D8B /* UIKit.framework */,
+				D569C602171DD1BB00255D8B /* Foundation.framework */,
+				D569C604171DD1BB00255D8B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D569C606171DD1BB00255D8B /* ARDatask */ = {
+			isa = PBXGroup;
+			children = (
+				D5908466171DD2FF007DF9B0 /* README.md */,
+				D590845D171DD23F007DF9B0 /* ARDatask.h */,
+				D590845E171DD23F007DF9B0 /* ARDatask.m */,
+				D569C60F171DD1BB00255D8B /* AppDelegate.h */,
+				D569C610171DD1BB00255D8B /* AppDelegate.m */,
+				D569C607171DD1BB00255D8B /* Supporting Files */,
+			);
+			path = ARDatask;
+			sourceTree = "<group>";
+		};
+		D569C607171DD1BB00255D8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D569C608171DD1BB00255D8B /* ARDatask-Info.plist */,
+				D569C609171DD1BB00255D8B /* InfoPlist.strings */,
+				D569C60C171DD1BB00255D8B /* main.m */,
+				D569C60E171DD1BB00255D8B /* ARDatask-Prefix.pch */,
+				D569C612171DD1BB00255D8B /* Default.png */,
+				D569C614171DD1BB00255D8B /* Default@2x.png */,
+				D569C616171DD1BB00255D8B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D569C5FC171DD1BB00255D8B /* ARDatask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D569C61A171DD1BB00255D8B /* Build configuration list for PBXNativeTarget "ARDatask" */;
+			buildPhases = (
+				D569C5F9171DD1BB00255D8B /* Sources */,
+				D569C5FA171DD1BB00255D8B /* Frameworks */,
+				D569C5FB171DD1BB00255D8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARDatask;
+			productName = ARDatask;
+			productReference = D569C5FD171DD1BB00255D8B /* ARDatask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D569C5F5171DD1BB00255D8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = alexruperez;
+			};
+			buildConfigurationList = D569C5F8171DD1BB00255D8B /* Build configuration list for PBXProject "ARDatask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D569C5F4171DD1BB00255D8B;
+			productRefGroup = D569C5FE171DD1BB00255D8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D569C5FC171DD1BB00255D8B /* ARDatask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D569C5FB171DD1BB00255D8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D569C60B171DD1BB00255D8B /* InfoPlist.strings in Resources */,
+				D569C613171DD1BB00255D8B /* Default.png in Resources */,
+				D569C615171DD1BB00255D8B /* Default@2x.png in Resources */,
+				D569C617171DD1BB00255D8B /* Default-568h@2x.png in Resources */,
+				D5908467171DD2FF007DF9B0 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D569C5F9171DD1BB00255D8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D569C60D171DD1BB00255D8B /* main.m in Sources */,
+				D569C611171DD1BB00255D8B /* AppDelegate.m in Sources */,
+				D590845F171DD23F007DF9B0 /* ARDatask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D569C609171DD1BB00255D8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D569C60A171DD1BB00255D8B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D569C618171DD1BB00255D8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D569C619171DD1BB00255D8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D569C61B171DD1BB00255D8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARDatask/ARDatask-Prefix.pch";
+				INFOPLIST_FILE = "ARDatask/ARDatask-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D569C61C171DD1BB00255D8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARDatask/ARDatask-Prefix.pch";
+				INFOPLIST_FILE = "ARDatask/ARDatask-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D569C5F8171DD1BB00255D8B /* Build configuration list for PBXProject "ARDatask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D569C618171DD1BB00255D8B /* Debug */,
+				D569C619171DD1BB00255D8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D569C61A171DD1BB00255D8B /* Build configuration list for PBXNativeTarget "ARDatask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D569C61B171DD1BB00255D8B /* Debug */,
+				D569C61C171DD1BB00255D8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D569C5F5171DD1BB00255D8B /* Project object */;
+}
