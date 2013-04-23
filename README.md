@@ -1,7 +1,7 @@
 Introduction
 ------------
-ARDatask is a class that you can drop into any iPhone app (iOS 4.0 or later) that will help to ask some user data to tracking or analysis once they have used the application.
-Read on below for how to get started.
+ARDatask is a class that you can drop into any iPhone app (iOS 4.0 or later) that will help to ask some user data to tracking or analyze once they have used the application.
+Read below for how to get started.
 
 
 Getting Started
