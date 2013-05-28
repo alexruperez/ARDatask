@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="ARDatask : ARDatask is a class that you can drop into any iPhone app (iOS 4.0 or later) that will help to ask some user data to tracking or analyze once they have used the application. Read below for how to get started." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>ARDatask</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/alexruperez/ARDatask">View on GitHub</a>
+
+          <h1 id="project_title">ARDatask</h1>
+          <h2 id="project_tagline">ARDatask is a class that you can drop into any iPhone app (iOS 4.0 or later) that will help to ask some user data to tracking or analyze once they have used the application. Read below for how to get started.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/alexruperez/ARDatask/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/alexruperez/ARDatask/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>Introduction</h2>
+
+<p>ARDatask is a class that you can drop into any iPhone app (iOS 4.0 or later) that will help to ask some user data to tracking or analyze once they have used the application.
+Read below for how to get started.</p>
+
+<h2>Getting Started</h2>
+
+<ol>
+<li>Add the ARDatask code into your project.</li>
+<li>If your project doesn't use ARC, add the <code>-fobjc-arc</code> compiler flag to <code>ARDatask.m</code> in your target's Build Phases » Compile Sources section.</li>
+<li>Add the <code>CFNetwork</code>, <code>SystemConfiguration</code>, and <code>StoreKit</code> frameworks to your project. Be sure to <strong>change Required to Optional</strong> for StoreKit in your target's Build Phases » Link Binary with Libraries section.</li>
+<li>Call <code>[ARDatask appLaunched:YES];</code> at the end of your app delegate's <code>application:didFinishLaunchingWithOptions:</code> method.</li>
+<li>Call <code>[ARDatask appEnteredForeground:YES];</code> in your app delegate's <code>applicationWillEnterForeground:</code> method.</li>
+<li>Add an observer for <code>dataskDidOptToRequest</code> wherever you like to check when te user gives permission and show your data request form.</li>
+<li>Call <code>[ARDatask setRequestCompleted:YES];</code> when you have the wanted user information.</li>
+<li>(OPTIONAL) Call <code>[ARDatask userDidSignificantEvent:YES];</code> when the user does something 'significant' in the app.</li>
+</ol><h2>Configuration</h2>
+
+<p>ARDatask provides class methods and some more notifications to configure its behavior. See <a href="https://github.com/alexruperez/ARDatask/blob/master/ARDatask.h">ARDatask.h</a> for more information.</p>
+
+<div class="highlight"><pre><span class="p">[</span><span class="n">ARDatask</span> <span class="n">setDaysUntilPrompt</span><span class="o">:</span><span class="mi">1</span><span class="p">];</span>
+<span class="p">[</span><span class="n">ARDatask</span> <span class="n">setUsesUntilPrompt</span><span class="o">:</span><span class="mi">10</span><span class="p">];</span>
+<span class="p">[</span><span class="n">ARDatask</span> <span class="n">setSignificantEventsUntilPrompt</span><span class="o">:-</span><span class="mi">1</span><span class="p">];</span>
+<span class="p">[</span><span class="n">ARDatask</span> <span class="n">setTimeBeforeReminding</span><span class="o">:</span><span class="mi">2</span><span class="p">];</span>
+<span class="p">[</span><span class="n">ARDatask</span> <span class="n">setDebug</span><span class="o">:</span><span class="nb">YES</span><span class="p">];</span>
+<span class="p">[[</span><span class="n">NSNotificationCenter</span> <span class="n">defaultCenter</span><span class="p">]</span> <span class="n">addObserver</span><span class="o">:</span><span class="n">self</span> <span class="n">selector</span><span class="o">:</span><span class="k">@selector</span><span class="p">(</span><span class="n">YOUR_METHOD</span><span class="p">)</span> <span class="n">name</span><span class="o">:</span><span class="s">@"dataskDidOptToRequest"</span> <span class="n">object</span><span class="o">:</span><span class="nb">nil</span><span class="p">];</span>
+<span class="p">[[</span><span class="n">NSNotificationCenter</span> <span class="n">defaultCenter</span><span class="p">]</span> <span class="n">addObserver</span><span class="o">:</span><span class="n">self</span> <span class="n">selector</span><span class="o">:</span><span class="k">@selector</span><span class="p">(</span><span class="n">YOUR_METHOD</span><span class="p">)</span> <span class="n">name</span><span class="o">:</span><span class="s">@"dataskDidDisplayAlert"</span> <span class="n">object</span><span class="o">:</span><span class="nb">nil</span><span class="p">];</span>
+<span class="p">[[</span><span class="n">NSNotificationCenter</span> <span class="n">defaultCenter</span><span class="p">]</span> <span class="n">addObserver</span><span class="o">:</span><span class="n">self</span> <span class="n">selector</span><span class="o">:</span><span class="k">@selector</span><span class="p">(</span><span class="n">YOUR_METHOD</span><span class="p">)</span> <span class="n">name</span><span class="o">:</span><span class="s">@"dataskDidOptToRemindLater"</span> <span class="n">object</span><span class="o">:</span><span class="nb">nil</span><span class="p">];</span>
+<span class="p">[[</span><span class="n">NSNotificationCenter</span> <span class="n">defaultCenter</span><span class="p">]</span> <span class="n">addObserver</span><span class="o">:</span><span class="n">self</span> <span class="n">selector</span><span class="o">:</span><span class="k">@selector</span><span class="p">(</span><span class="n">YOUR_METHOD</span><span class="p">)</span> <span class="n">name</span><span class="o">:</span><span class="s">@"dataskDidDismissModalView"</span> <span class="n">object</span><span class="o">:</span><span class="nb">nil</span><span class="p">];</span>
+</pre></div>
+
+<h2>License</h2>
+
+<p>Copyright 2013. <a href="https://github.com/alexruperez">alexruperez</a>
+Based on <a href="https://github.com/arashpayan/appirater">appirater</a></p>
+
+<p>While not required, I greatly encourage and appreciate any improvements that you make
+to this library be contributed back for the benefit of all who use ARDatask.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">ARDatask maintained by <a href="https://github.com/alexruperez">alexruperez</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
